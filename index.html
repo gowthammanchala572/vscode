@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SnapScape | Explore in Images</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="hero">
+        <p class="eyebrow">YOUR VISUAL DISCOVERY SPACE</p>
+
+        <h1>Snap<span>Scape.</span></h1>
+
+        <p class="tagline">
+            Discover the world, one search at a time.
+        </p>
+
+        <form id="search-form" class="search-form">
+            <label for="search-input" class="visually-hidden">
+                Search for images
+            </label>
+
+            <input
+                type="search"
+                id="search-input"
+                placeholder="Try mountains, space, wildlife..."
+            >
+
+            <button type="submit" id="search-button">
+                Search ↗
+            </button>
+        </form>
+
+        <p class="helper-text">
+            Find inspiration for your next adventure.
+        </p>
+    </header>
+
+    <main class="content">
+
+        <section class="discover-section">
+            <div>
+                <p class="eyebrow">START EXPLORING</p>
+                <h2>What catches your eye?</h2>
+            </div>
+
+            <div class="categories" aria-label="Suggested search topics">
+                <button type="button" class="chip">Nature</button>
+                <button type="button" class="chip">Architecture</button>
+                <button type="button" class="chip">Space</button>
+                <button type="button" class="chip">Wildlife</button>
+            </div>
+        </section>
+
+        <p id="result-count" class="result-count">
+            Your discoveries will appear here
+        </p>
+
+        <section id="results" aria-label="Image search results">
+        </section>
+
+        <div id="empty-state" class="empty-state">
+            <div class="empty-icon">✳</div>
+            <h3>Your next discovery starts here.</h3>
+            <p>Search for something you love to see a world of images.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>SnapScape © 2026 · Made for curious minds.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
